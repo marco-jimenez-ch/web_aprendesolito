@@ -1,0 +1,82 @@
+[
+  {
+    "id": 101,
+    "titulo": "Inteligencia artificial para la productividad",
+    "categoria": "Tecnología",
+    "nivel": "Básico",
+    "precio": 19990,
+    "imagen": "assets/img/cursos/|placeholder.jpg",
+    "instructor": "Ana Pérez",
+    "lecciones": ["Introducción", "HTML básico", "CSS básico", "Proyecto final"]
+  },
+  {
+    "id": 102,
+    "titulo": "JavaScript Intermedio",
+    "categoria": "Programación",
+    "nivel": "Medio",
+    "precio": 24990,
+    "imagen": "assets/img/cursos/placeholder.jpg",
+    "instructor": "Marco López",
+    "lecciones": ["ES6", "DOM", "Fetch API", "Módulos"]
+  },
+  {
+    "id": 103,
+    "titulo": "React para Principiantes",
+    "categoria": "Frontend",
+    "nivel": "Medio",
+    "precio": 29990,
+    "imagen": "assets/img/cursos/placeholder.jpg",
+    "instructor": "Carla Díaz",
+    "lecciones": ["Componentes", "Props/State", "Efectos", "Ruteo"]
+  },
+  {
+    "id": 104,
+    "titulo": "Diseño UI con Bootstrap 5",
+    "categoria": "Diseño",
+    "nivel": "Básico",
+    "precio": 17990,
+    "imagen": "assets/img/cursos/placeholder.jpg",
+    "instructor": "Luis Bravo",
+    "lecciones": ["Grid", "Utilidades", "Componentes", "Buenas prácticas"]
+  },
+  {
+    "id": 105,
+    "titulo": "Git y GitHub Colaborativo",
+    "categoria": "Herramientas",
+    "nivel": "Básico",
+    "precio": 14990,
+    "imagen": "assets/img/cursos/placeholder.jpg",
+    "instructor": "María Torres",
+    "lecciones": ["Commits", "Branches", "PRs", "Issues"]
+  },
+  {
+    "id": 106,
+    "titulo": "Python para Data",
+    "categoria": "Datos",
+    "nivel": "Básico",
+    "precio": 27990,
+    "imagen": "assets/img/cursos/placeholder.jpg",
+    "instructor": "Javier Soto",
+    "lecciones": ["Sintaxis", "Pandas", "Gráficos", "Proyecto"]
+  },
+  {
+    "id": 107,
+    "titulo": "SQL desde 0",
+    "categoria": "Datos",
+    "nivel": "Básico",
+    "precio": 19990,
+    "imagen": "assets/img/cursos/placeholder.jpg",
+    "instructor": "Fernanda Ríos",
+    "lecciones": ["SELECT", "JOINs", "Agregaciones", "Subconsultas"]
+  },
+  {
+    "id": 108,
+    "titulo": "Figma para Desarrolladores",
+    "categoria": "Diseño",
+    "nivel": "Medio",
+    "precio": 21990,
+    "imagen": "assets/img/cursos/placeholder.jpg",
+    "instructor": "Tomás Aguilar",
+    "lecciones": ["Auto layout", "Componentes", "Protitipos", "Handoff"]
+  }
+]
