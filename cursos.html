@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cursos | EduMarket</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cursos | Aprendesolito</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">Aprendesolito</a>
@@ -18,30 +19,39 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="cursos.html">Cursos</a></li>
           <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
-          <li class="nav-item"><a class="nav-link" href="login.html">Iniciar Sesión</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Iniciar sesión</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- Contenido -->
   <main class="container py-4">
     <h1 class="mb-4">Catálogo de cursos</h1>
     <div id="grid-cursos" class="row g-3"></div>
   </main>
 
+  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3 mt-5">
     <p class="mb-0">&copy; 2025 Aprendesolito</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
+    // Render con base de datos + cursos creados por instructor (localStorage)
     async function renderCursos() {
       const cont = document.getElementById('grid-cursos');
       cont.innerHTML = '<p class="text-muted">Cargando cursos…</p>';
+
       try {
-        const res = await fetch('data/courses.json');
-        const cursos = await res.json();
+        const cursos = await loadAllCourses(); // <-- usa helper global
+        if (!cursos.length) {
+          cont.innerHTML = '<div class="alert alert-info">No hay cursos disponibles por ahora.</div>';
+          return;
+        }
+
         cont.innerHTML = cursos.map(c => `
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="card h-100">
@@ -58,17 +68,19 @@
             </div>
           </div>
         `).join('');
-        // Delegación para botones Agregar
+
+        // Delegación del click para los botones "Agregar"
         cont.addEventListener('click', (e) => {
           const btn = e.target.closest('.btn-agregar');
           if (!btn) return;
-          addToCartById(btn.dataset.id);
+          addToCartById(btn.dataset.id); // <-- helper global
         });
       } catch (err) {
-        cont.innerHTML = '<div class="alert alert-danger">No se pudieron cargar los cursos.</div>';
         console.error(err);
+        cont.innerHTML = '<div class="alert alert-danger">No se pudieron cargar los cursos.</div>';
       }
     }
+
     renderCursos();
   </script>
 </body>
