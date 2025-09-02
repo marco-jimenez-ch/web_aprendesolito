@@ -5,9 +5,9 @@
     "categoria": "Tecnología",
     "nivel": "Básico",
     "precio": 19990,
-    "imagen": "assets/img/cursos/|placeholder.jpg",
-    "instructor": "Ana Pérez",
-    "lecciones": ["Introducción", "HTML básico", "CSS básico", "Proyecto final"]
+    "imagen": "assets/img/cursos/1.jpeg",
+    "instructor": "Marco Jiménez",
+    "lecciones": ["Introducción a IA", "Prompting práctico", "Automatización con herramientas", "Proyecto final"]
   },
   {
     "id": 102,
@@ -15,8 +15,8 @@
     "categoria": "Programación",
     "nivel": "Medio",
     "precio": 24990,
-    "imagen": "assets/img/cursos/placeholder.jpg",
-    "instructor": "Marco López",
+    "imagen": "assets/img/cursos/2.jpeg",
+    "instructor": "Martina Jiménez",
     "lecciones": ["ES6", "DOM", "Fetch API", "Módulos"]
   },
   {
@@ -25,8 +25,8 @@
     "categoria": "Frontend",
     "nivel": "Medio",
     "precio": 29990,
-    "imagen": "assets/img/cursos/placeholder.jpg",
-    "instructor": "Carla Díaz",
+    "imagen": "assets/img/cursos/react.jpeg",
+    "instructor": "Katherine González",
     "lecciones": ["Componentes", "Props/State", "Efectos", "Ruteo"]
   },
   {
@@ -35,8 +35,8 @@
     "categoria": "Diseño",
     "nivel": "Básico",
     "precio": 17990,
-    "imagen": "assets/img/cursos/placeholder.jpg",
-    "instructor": "Luis Bravo",
+    "imagen": "assets/img/cursos/boo.png",
+    "instructor": "Pedro Soto",
     "lecciones": ["Grid", "Utilidades", "Componentes", "Buenas prácticas"]
   },
   {
@@ -45,9 +45,9 @@
     "categoria": "Herramientas",
     "nivel": "Básico",
     "precio": 14990,
-    "imagen": "assets/img/cursos/placeholder.jpg",
+    "imagen": "assets/img/cursos/git.jpeg",
     "instructor": "María Torres",
-    "lecciones": ["Commits", "Branches", "PRs", "Issues"]
+    "lecciones": ["Commits", "Branches", "Pull Requests", "Issues"]
   },
   {
     "id": 106,
@@ -55,7 +55,7 @@
     "categoria": "Datos",
     "nivel": "Básico",
     "precio": 27990,
-    "imagen": "assets/img/cursos/placeholder.jpg",
+    "imagen": "assets/img/cursos/python.jpeg",
     "instructor": "Javier Soto",
     "lecciones": ["Sintaxis", "Pandas", "Gráficos", "Proyecto"]
   },
@@ -65,7 +65,7 @@
     "categoria": "Datos",
     "nivel": "Básico",
     "precio": 19990,
-    "imagen": "assets/img/cursos/placeholder.jpg",
+    "imagen": "assets/img/cursos/sql.jpeg",
     "instructor": "Fernanda Ríos",
     "lecciones": ["SELECT", "JOINs", "Agregaciones", "Subconsultas"]
   },
@@ -75,8 +75,8 @@
     "categoria": "Diseño",
     "nivel": "Medio",
     "precio": 21990,
-    "imagen": "assets/img/cursos/placeholder.jpg",
+    "imagen": "assets/img/cursos/figma.jpeg",
     "instructor": "Tomás Aguilar",
-    "lecciones": ["Auto layout", "Componentes", "Protitipos", "Handoff"]
+    "lecciones": ["Auto layout", "Componentes", "Prototipos", "Handoff"]
   }
 ]

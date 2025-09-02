@@ -1,0 +1,14 @@
+/* Cards del catálogo: imagen estable */
+.card-img-top { object-fit: cover; height: 160px; }
+
+/* Imagen del detalle */
+#detalle img { object-fit: cover; max-height: 360px; }
+
+/* Asegura buen alto de contenido */
+main.container { min-height: 60vh; }
+
+/* Botones de cards legibles */
+.card .btn { white-space: nowrap; }
+
+/* Navbar en móvil: separaciones */
+.navbar .nav-link { padding-left: .5rem; padding-right: .5rem; }

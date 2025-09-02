@@ -27,10 +27,10 @@ window.addToCartById = async function (id) {
   else alert('Curso no encontrado.');
 };
 
-// --- DINERO CLP (si no lo tenías ya) ---
+// --- DINERO CLP ---
 window.currencyCL = new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP' });
 
-// --- Carrito (si no lo tenías ya) ---
+// --- Carrito ---
 window.getCart = function () {
   try { return JSON.parse(localStorage.getItem('carrito') || '[]'); }
   catch { return []; }
